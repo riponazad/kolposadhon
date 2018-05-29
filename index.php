@@ -13,25 +13,94 @@
 	<link rel="stylesheet" href="mystyle.css">
   </head>
   <body>
+  
+  <!-- header part of the page -->
   <div class="header">
     <div class="container">
       <nav class="navbar navbar-expand-lg navbar-dark">
-	    <h1 ><a style="color:#ffffff" href="index.php">কল্পসাধন</a></h1>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+	    <div class="navbar-header">
+		  <h1><a class="navbar-brand" style="font-size: 40px; padding: 0px 0px 0px 0px; margin:0px;" href="index.php">কল্পসাধন</a></h1>
+		  <h6 style="color:#ffecd7; margin:0px;">স্বাবলম্বী হবে আমার দেশ!</h6>
+        </div>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent">
           <span class="navbar-toggler-icon"></span>
         </button>
 		
-		<div class="collapse navbar-collapse" id="navbarContent">
+		<div class="collapse navbar-collapse" id="navbarContent" >
 		  <ul class="navbar-nav ml-auto">
-			<li class="nav-item"><a href="#12">কিভাবে কাজ করে জানুন!</a></li>
+			<li class="nav-item" ><a href="#12">কিভাবে কাজ করে জানুন!</a></li>
             <li class="nav-item"><a href="signup.php"><span class="fa fa-user"></span> সাইন আপ</a></li>
             <li class="nav-item"><a href="login.php"><span class="fa fa-sign-in"></span> লগ ইন</a></li>
-			<li class="nav-item"><button class="btn navbar-btn">English</button></li>
+			<li class="nav-item"><button class="btn navbar-btn"><a>English</a></button></li>
 		  </ul>
 		</div>
-	  </nav>	
+	  </nav>
+	  <div class="row">
+	    <div class="col" style="padding: 0px 30px 0px 0px;">
+	      <a href="investpost.php" class="btn btn-invst btn-md" role="button">বিনিয়োগ করুন</a>  
+	      <a href="businesspost.php" class="btn btn-apply btn-md" role="button">ব্যবসা পরিকল্পনা পোস্ট করুন</a>
+        </div>
+	  </div>
+	</div>	  
+  </div>
+  
+  
+  
+  <!-- carousel part of the page -->
+  <div class="container">
+    <div id="demo" class="carousel slide" data-ride="carousel">
+	  <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#demo" data-slide-to="0" class="active"></li>
+      <li data-target="#demo" data-slide-to="1"></li>
+      <li data-target="#demo" data-slide-to="2"></li>
+	  <li data-target="#demo" data-slide-to="3"></li>
+	  <li data-target="#demo" data-slide-to="4"></li>
+    </ol>
+  
+    <!-- The slideshow -->
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="farmer.png" alt="farmer smiles" style="width:100%;">
+      </div>
+      <div class="carousel-item">
+        <img src="cov.png" alt="Shuvo Noboborsho" style="width:100%;">
+      </div>
+      <div class="carousel-item">
+        <img src="fish_farm.jpg" alt="Fish farm" style="width:100%;">
+      </div>
+	  <div class="carousel-item">
+        <img src="chicken_farm.png" alt="Chicken farm" style="width:100%;">
+      </div>
+	  <div class="carousel-item">
+        <img src="cow.jpg" alt="Cow farm" style="width:100%;">
+      </div>
+    </div>
+  
+    <!-- Left and right controls -->
+    <a class="carousel-control-prev" href="#demo" data-slide="prev">
+      <span class="fa fa-chevron-left"></span>
+    </a>
+    <a class="carousel-control-next" href="#demo" data-slide="next">
+      <span class="fa fa-chevron-right"></span>
+    </a>
     </div>
   </div>
+
+
+<div class="primay-menu header">
+  <div class="container">
+    <nav class="navbar navbar-expand-lg navbar-dark justify-content-center">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a style="padding: 5px; margin: 6px 8px 2px 8px;" href="investors.php">বিনিয়োগকারী তালিকা</a></li>
+        <li class="nav-item"><a style="padding: 5px; margin: 6px 8px 2px 8px;" href="businesspage.php">ব্যবসা পরিকল্পনা তালিকা</a></li>
+        <li class="nav-item"><a style="padding: 5px; margin: 6px 8px 2px 8px;" href="activebusiness.php">কার্যরত ব্যবসা সমূহ </a></li>
+        <li class="nav-item"><a style="padding: 5px; margin: 6px 8px 2px 8px;" href="completebusiness.php">সম্পন্ন ব্যবসা সমূহ </a></li>
+      </ul>
+    </nav>
+  </div>
+</div>
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
