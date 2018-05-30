@@ -22,7 +22,7 @@
 		  <h1><a class="navbar-brand" style="font-size: 40px; padding: 0px 0px 0px 0px; margin:0px;" href="index.php">কল্পসাধন</a></h1>
 		  <h6 style="color:#ffecd7; margin:0px;">স্বাবলম্বী হবে আমার দেশ!</h6>
         </div>
-		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent">
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarSupportedContent">
           <span class="navbar-toggler-icon"></span>
         </button>
 		
@@ -90,9 +90,9 @@
 
 <div class="primay-menu header">
   <div class="container">
-    <nav class="navbar navbar-expand-lg navbar-dark justify-content-center">
-      <ul class="navbar-nav">
-        <li class="nav-item"><a style="padding: 5px; margin: 6px 8px 2px 8px;" href="investors.php">বিনিয়োগকারী তালিকা</a></li>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item"><a style="padding: 5px; margin: 6px 8px 2px 8px;" href="investorlist.php">বিনিয়োগকারী তালিকা</a></li>
         <li class="nav-item"><a style="padding: 5px; margin: 6px 8px 2px 8px;" href="businesspage.php">ব্যবসা পরিকল্পনা তালিকা</a></li>
         <li class="nav-item"><a style="padding: 5px; margin: 6px 8px 2px 8px;" href="activebusiness.php">কার্যরত ব্যবসা সমূহ </a></li>
         <li class="nav-item"><a style="padding: 5px; margin: 6px 8px 2px 8px;" href="completebusiness.php">সম্পন্ন ব্যবসা সমূহ </a></li>
@@ -100,6 +100,69 @@
     </nav>
   </div>
 </div>
+
+
+<div class="container">
+  <form class="form-inline navbar-nav" action="/action_page.php">
+	<div class="input-group ml-auto" style="padding: 10px 0px 10px 0px;">
+      <input class="form-control ml-sm-2" type="text" placeholder="খুজুন......">
+      <div class="input-group-btn">
+        <button class="btn" type="submit">
+          <i class="fa fa-search"></i>
+        </button>
+      </div>
+    </div>
+  </form>
+</div>
+
+
+<div class="body jumbotron">
+  <div class="container">
+    <div class="row">
+	  <div class="col-sm-1">
+	  </div>
+	  <div class="col-sm-6">
+	    <div style="padding-bottom: 20px;">
+		  <h2>কল্পসাধন-এ আপনাকে স্বাগতম!<h2>
+        <p class="lead">
+                     অল্প পুঁজিতে বিনিয়োগ করতে পারছেন না?  
+                     অথবা পুঁজির অভাবে আপনার ব্যবসা পরিকল্পনাকে কাজে লাগাতে পারছেন না?
+
+                     বাংলাদেশে এই প্রথম আমরাই নিয়ে এসেছি এই দুই সমস্যার সমাধান একই প্লাটফর্মে।
+                    যেখানে আপনাদের ক্ষুদ্র ক্ষুদ্র বিনিয়োগের সমন্বয়ে পরিচালিত হবে   ক্ষুদ্র ক্ষুদ্র ব্যবসা 
+                   এবং সেগুলো পর্যবেক্ষণ করতে পারবেন পৃথিবীর যেকোনো প্রান্ত থেকে। স্বাবলম্বী হবে 
+                   দেশের মানুষ, উন্নত হবে বাংলাদেশ।
+       </p>
+		</div>
+		
+		<div style="padding-bottom: 20px;">
+		  <h2 id="12">কল্পসাধন কিভাবে কাজ করে??? <h2>
+        <p class="lead">
+		কল্পসাধন দুইটি শ্রেনিতে বিভক্ত। প্রথমত, বিনিয়োগকারীরা তাদের অর্থ নিয়ে নিশ্চিত থাকতে পারেন কারন আপনার বিনিয়োগকৃত অর্থ ফেরত পাবার নিশ্চয়তা দিচ্ছে কল্পসাধন।
+        আপনি চাইলে আপনার পছন্দমত ব্যবসা পরিকল্পনা খুঁজে সরাসরি বিনিয়োগ করতে পারেন অথবা আপনি আপনার বিনিয়োগের পরিমাণ এবং সময় জানিয়ে দিতে পারেন। কল্পসাধন 
+        আপনার জন্য ব্যবসা পরিকল্পনা খুঁজে আপনাকে জানিয়ে দিবে। কোন ব্যবসা পরিকল্পনাকে আপনি একাই অথবা মিলিতভাবে বিনিয়োগ করতে পারেন।   		
+   <br>
+   দ্বিতীয়ত, ক্ষুদ্র ব্যবসাীরা শুধুমাত্র সাইন আপ করেই আপনার ব্যবসা পরিকল্পনা পোস্ট করতে পারেন। শুধু তাই ই নয়, আপনি কল্পসাধনের সকল বিনিয়োগকারীকে সরাসরি আবেদন করতে 
+ পারেন আপনার ব্যবসায় বিনিয়োগ করার জন্য। 
+       </p>
+		</div>
+		
+	  </div>
+	  <div class="col-sm-5">
+	  </div>
+	</div>
+  </div>
+</div>
+
+
+<footer>
+  <div class="footer">
+    <div class="container">
+      <a>কল্পসাধন ©  All Rights Reserved  |  Developed by কল্পসাধন </a>
+	</div>
+  </div>
+</footer>
+
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
