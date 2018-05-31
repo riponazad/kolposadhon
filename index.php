@@ -28,15 +28,15 @@
 		
 		<div class="collapse navbar-collapse" id="navbarContent" >
 		  <ul class="navbar-nav ml-auto">
-			<li class="nav-item" ><a href="#12">কিভাবে কাজ করে জানুন!</a></li>
-            <li class="nav-item"><a href="signup.php"><span class="fa fa-user"></span> সাইন আপ</a></li>
-            <li class="nav-item"><a href="login.php"><span class="fa fa-sign-in"></span> লগ ইন</a></li>
-			<li class="nav-item"><button class="btn navbar-btn"><a>English</a></button></li>
+			<li class="nav-item" ><a style="margin: 6px 8px 2px 8px;" href="#12">কিভাবে কাজ করে জানুন!</a></li>
+            <li class="nav-item"><a style="margin: 6px 8px 2px 8px;" href="signup.php"><span class="fa fa-user"></span> সাইন আপ</a></li>
+            <li class="nav-item"><a style="margin: 6px 8px 2px 8px;" href="login.php"><span class="fa fa-sign-in"></span> লগ ইন</a></li>
+			<li class="nav-item"><button class="btn navbar-btn"><a style="margin: 6px 8px 2px 8px;">English</a></button></li>
 		  </ul>
 		</div>
 	  </nav>
 	  <div class="row">
-	    <div class="col" style="padding: 0px 30px 0px 0px;">
+	    <div class="col">
 	      <a href="investpost.php" class="btn btn-invst btn-md" role="button">বিনিয়োগ করুন</a>  
 	      <a href="businesspost.php" class="btn btn-apply btn-md" role="button">ব্যবসা পরিকল্পনা পোস্ট করুন</a>
         </div>
@@ -90,12 +90,12 @@
 
 <div class="primay-menu header">
   <div class="container">
-    <nav class="navbar navbar-expand-lg navbar-dark">
+    <nav class="navbar navbar-expand-sm navbar-dark" style="padding-right: 0px;">
       <ul class="navbar-nav ml-auto">
-        <li class="nav-item"><a style="padding: 5px; margin: 6px 8px 2px 8px;" href="investorlist.php">বিনিয়োগকারী তালিকা</a></li>
-        <li class="nav-item"><a style="padding: 5px; margin: 6px 8px 2px 8px;" href="businesspage.php">ব্যবসা পরিকল্পনা তালিকা</a></li>
-        <li class="nav-item"><a style="padding: 5px; margin: 6px 8px 2px 8px;" href="activebusiness.php">কার্যরত ব্যবসা সমূহ </a></li>
-        <li class="nav-item"><a style="padding: 5px; margin: 6px 8px 2px 8px;" href="completebusiness.php">সম্পন্ন ব্যবসা সমূহ </a></li>
+        <li class="nav-item"><a style="margin: 6px 8px 2px 8px;" href="investorlist.php">বিনিয়োগকারী তালিকা</a></li>
+        <li class="nav-item"><a style="margin: 6px 8px 2px 8px;" href="busineslist.php">ব্যবসা পরিকল্পনা তালিকা</a></li>
+        <li class="nav-item"><a style="margin: 6px 8px 2px 8px;" href="activebusiness.php">কার্যরত ব্যবসা সমূহ </a></li>
+        <li class="nav-item"><a style="margin: 6px 8px 2px 8px;" href="completebusiness.php">সম্পন্ন ব্যবসা সমূহ </a></li>
       </ul>
     </nav>
   </div>

@@ -40,7 +40,7 @@
   
 <div class="pageheader jumbotron">
   <div class="container">
-    <h5 style="margin: 12px 2px 12px 2px;"><span id="roundborder">   বিনিয়োগকারীর তালিকা</span></h5>
+    <h5 style="margin: 12px 2px 12px 2px;"><span id="roundborder">ব্যবসা পরিকল্পনা তালিকা</span></h5>
   </div>	
 </div>
 
@@ -103,7 +103,7 @@ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 } 
 
-$sql = "SELECT name, address, amount, duration, email, gender FROM investors NATURAL JOIN users";
+$sql = "SELECT name, email, address, title, fund_amount, description, duration, rate FROM users NATURAL JOIN borrowers NATURAL JOIN businesses";
 $result = $conn->query($sql);
 
 if ($result->num_rows > 0)
@@ -112,25 +112,27 @@ if ($result->num_rows > 0)
 		{
 			echo "<div class="."\"card\""." data-toggle="."\"collapse\""." data-parent="."\"#accordion\""." href="."\"#demo\"".">";
 			echo "<div class="."\"row\"".">";
-			echo "<div class="."\"col-sm-4\"".">";
+			echo "<div class="."\"col-sm-3\"".">";
 			echo "<div>";
-			if($row["gender"]=="male")
 			echo "<img src="."\"user-male-icon.png\""." alt="."\"profile image\""." class="."\"img-fluid\""." width="."\"100%\"".">";
-		    else
-			echo "<img src="."\"user-female-icon.png\""." alt="."\"profile image\""." class="."\"img-fluid\""." width="."\"100%\"".">";				
 			echo "</div>";
 			echo "<div>";
 			echo "<h4>".$row["name"]."</h4>";
-			echo "<p>".$row["email"]."</p>";
+			echo "<h4>".$row["email"]."</h4>";
 			echo "</div>";
+			echo "</div>";
+			echo "<div class="."\"col-sm-9\"".">";
+			echo "<h3>".$row["title"]."</h3>";
+			echo "<h3>অর্থের প্রয়োজনঃ ".$row["fund_amount"]." টাকা।</h3>";
+			echo "<h4>সর্বোচ্চ সময়ঃ ".$row["duration"]." মাস।</h4>";
+			echo "<h4>শতকরা হারঃ ".$row["rate"]."%</h4>";
+			echo "<h4>".$row["address"]."</h4>";
+			echo "<div id="."\"demo"." class="."\"collapse\"".">";
+			//echo "<p>".$row["description"]."</p>";
+			echo "</div>";
+			echo "<button type="."\"button\""." class="."\"btn btn-invst btn-lg\"".">বিনিয়োগ করুন</button>";
 			echo "</div>";
 			echo "<div class="."\"col-sm-8\"".">";
-			echo "<h4>".$row["amount"]." টাকা।</h4>";
-			echo "<h4>সর্বোচ্চ সময়ঃ ".$row["duration"]." মাস।</h4>";
-			echo "<div id="."\"demo"." class="."\"collapse\"".">";
-			echo "<h5>".$row["address"]."</h5>";
-			echo "</div>";
-			echo "<button type="."\"button\""." class="."\"btn btn-apply btn-lg\""."> আবেদন করুন</button>";
 			echo "</div>";
 			echo "</div>";
 			echo "</div>";
